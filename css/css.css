@@ -1,0 +1,121 @@
+/* COLOURS */
+:root{
+    --BORDERCOLOR: white;
+    --BGCOLOR: rgb(39, 39, 39);
+    --SUBSCRIBE: whitesmoke;
+    --SUBSCRIBETEXT: black;
+}
+
+/* SIZING & BACKGROUND */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/images/wp5969847.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTAINER */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* HEADER */
+
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--BGCOLOR);
+    color: var(--BORDERCOLOR);
+}
+
+nav{
+    width: 100%;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 3rem;
+    margin-right: 5rem;
+}
+
+h2{
+    width: 100%;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 5rem;
+    letter-spacing: 5px;
+}
+
+a{
+    color: var(--BORDERCOLOR);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* MAIN */
+
+main{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: var(--BORDERCOLOR);
+    width: 30%;
+    margin: 2rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+/* BUTTONS */
+
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+button{
+    height: 60px;
+    width: 170px;
+}
+
+button:hover{
+    cursor: pointer;
+    outline: 2px solid var(--BORDERCOLOR);
+    outline-offset: 2px;
+}
+
+.learn-more{
+    background-color: transparent;
+    color: var(--BORDERCOLOR);
+    border: 1px solid var(--BORDERCOLOR);
+    border-radius: 10px;
+}
+
+.subscribe{
+    background-color: var(--SUBSCRIBE);
+    color: var(--SUBSCRIBETEXT);
+    border: 1px solid var(--BORDERCOLOR);
+    border-radius: 10px;
+}
